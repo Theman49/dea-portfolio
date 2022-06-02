@@ -1,0 +1,370 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.bg-yellow-1 {
+    background-color: #EDB33C;
+}
+
+.bg-yellow-2 {
+    background-color: #E99C00;
+}
+
+.bg-green-1 {
+    background-color: #51784F;
+}
+
+.color-white {
+    color: #FFFFFF;
+}
+
+.button-1 {
+    border: 2px solid #F9BD42;
+    border-radius: 30px;
+    padding: 10px 50px;
+    transition: all ease .5s;
+} .button-1:hover {
+    background-color: #F9BD42;
+    color: white;
+}
+
+
+#topbar {
+    display: flex;
+    justify-content: space-between;
+    background-image: url("./asset/bg-top.png");
+    background-color: #51784F;
+    padding: 0 45px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+} #topbar .logo {
+    width: 177px;
+    height: 177px;
+    margin: 20px 0;
+} #topbar .quote {
+    width: 229px;
+    margin: 13px 0;
+} #topbar .quote p {
+    font-size: 35px;
+    font-weight: 500;
+    text-align: right;
+    line-height: 46px;
+    margin: 0;
+}
+
+#menu {
+    display: flex;
+    justify-content:space-between;
+    background-color: #EDB33C;
+    border-radius: 30px;
+    text-align: center;
+} #menu a {
+    width: 480px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 43px;
+    padding: 14px 0;
+} #menu a.active-tab,
+  #menu a:hover
+{
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 43px;
+
+    border-radius: 30px;
+    background-color: #E99C00;
+}
+
+#profile {
+    display: flex;
+    margin-top: 18px;
+} #profile .profile-image {
+    width: 230px;
+    height: 293px;
+    margin: 0 52px 0 64px;
+} #profil .text-section {
+    width: 690px;
+} #profil .text-section p:no(first-child){
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    margin: 0;
+} #profile .text-section p:first-child {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 43px;
+    margin-top: 8px;
+} #profile .text-section a {
+    display: inline-block;
+    margin-top: 37px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+#showcase {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 64px;
+    margin-top: 31px;
+} #showcase div:nth-child(2) {
+    width: 4px;
+    background-color: #E99C00;
+} #showcase .item-showcase img {
+    width: 540px;
+    height: 297px;
+}
+@media screen and (max-width:375px){
+    #profile{
+        
+    }
+    #profile .profile-image{
+        width: 91px;
+        height: 116px;
+        margin: 0 16px 0 23px;
+    }
+    #profile .profile-image img{
+        width: 91px;
+        height: 116px;
+    }
+    #profile .text-section {
+        padding-right: 23px;
+    }
+    #profile .text-section a{
+        font-size: 20px;
+    }
+    .button-1 {
+        margin-left: -100px;
+    }
+    #showcase{
+        flex-flow: column;
+        padding: 0 32px;
+    }
+    #showcase div:nth-child(2){
+        display: none;
+    }
+    #showcase .item-showcase img {
+        width: 100%;
+        height: 165px;
+    }
+    #showcase .item-showcase {
+        margin-bottom: 16px;
+}
+}
+
+#footer {
+    text-align: center;
+    color: white;
+    background-color: #51784F;
+    padding: 15px 0;
+    margin-top: 46px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+} #footer p {
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    white-space: pre;
+}
+
+/* contact */
+.content {
+    padding: 58px 67px;
+
+}
+.label {
+    border: 3px solid #F9BD42;
+    border-radius: 30px;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 37px;
+    padding: 12px 75px;
+    background-color: #FFFFFF;
+}
+.content > div {
+    display: flex;
+    align-items: center;
+}
+.sosmed {
+    background: #51784F;
+    border-radius: 40px;
+    width: 792px;
+    margin-right: 74px;
+    padding: 10px 0;
+
+}
+.sosmed > div {
+    display: flex;
+    align-items: center;
+    margin: 0px 35px;
+
+}
+.sosmed .circle {
+    margin-right: 62px;
+}
+.sosmed > div > div:last-child {
+width: 80%;
+text-align: center;
+}
+.sosmed .label {
+    width: 100%;
+}
+
+#section {
+    margin: 42px 75px;
+}
+#kategori {
+    width: 1020px;
+    margin: 0 auto;
+    padding: 69px 0;
+}
+#kategori div {
+    margin-bottom: 69px;
+}
+#kategori .label {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+
+}
+#kategori .label:hover {
+    background-color: #EDB33C;
+}
+#title {
+    margin: 100px 71px;
+}
+#title.active {
+    background-color: #E99C00;
+}
+.konten {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 95vw;
+    padding: 0 23px;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+.konten .item {
+    padding: 35px;
+    border: 2px #F9BD42 solid;
+    border-radius: 50px;
+}
+
+.konten img {
+    width: 100%;
+    height: 360px;
+}
+
+.konten p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+}
+@media screen and (max-width:375px){
+    #topbar {
+        padding:17px;
+
+    }
+    #topbar .logo{
+        height: fit-content;
+    }
+    #topbar img {
+        width : 85px;
+        height: 85px;
+    }
+    #topbar .quote p {
+        font-size: 20px;
+        line-height: 27px;
+    }
+    #menu a{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    #menu a.active-tab {
+        font-size: 15px;
+        line-height: 20px;
+    } 
+    .content {
+        padding: 25px;
+    }
+    .content>div {flex-flow: column}
+    .sosmed {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .sosmed .circle {
+        width: 38px;
+        height: 38px;
+        margin-right: 27px;
+    }
+    .sosmed .circle img{
+        width: 38px;
+    }
+    #contact-img {
+        margin-top: 27px;
+        padding-top: 19px;
+        border-top: 2px solid #E99C00;
+    }
+    #contact-img img{
+        width: 325px;
+    }
+    #kategori {
+        width: 95vw;
+        padding: 0 34px 40px;
+    }
+    #section {
+        margin: 43px 34px;
+    }
+    #kategori>div {
+        margin-bottom: 27px;
+    }
+    .label {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 6px 8px;
+    }
+    #footer p {
+        font-size: 10px;
+        line-height: 13px;
+    }
+    .konten {
+        grid-template-columns: repeat(2,1fr);
+        gap: 15px;
+        width: 100%;
+    }
+    .konten .item{
+        padding: 10px;
+        border: 2px #F9BD42 solid;
+        border-radius: 10px;
+    }
+    .konten img {
+        width: 129px;
+        height: 129px;
+    }
+    .konten p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    #title {
+        margin: 40px 24px;
+        font-size: 18px;
+        padding: 0 15px;
+    }
+   
+        
+    
+}
